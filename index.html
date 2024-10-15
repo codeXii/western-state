@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <title>Online Bank</title>
+    <title>Western-State</title>
 </head>
 <body>
    
@@ -13,26 +13,28 @@
 
 <!-- Login form -->
 <section
-class="bg-info text-light p-5 p-lg-0 pt-lg-5"
+class="bg-info text-light p-5  pt-lg-5"
 >
 <div class="container">
   <div class="col-md-12 bg-dark rounded-2">
     <div class="p-3">
       <h1 class="text-center"><span class="text-light"> WELCOME BACK </span></h1>
-      <small class="text-info">login to your secured international wise state group capital accounts</small>
+      <small class="text-info">Login to your secured international western state group capital accounts</small>
       <form action="./dashboard.html" method="post">
         <div class="mb-1">
           <label for="email" class="col-form-label">
             Email:
           </label>
-          <input type="email" class="form-control" id="email" />
+          <input type="email" class="form-control email" id="email" />
         </div>
         <div class="mb-3">
           <label for="password" class="col-form-label">Password:</label>
-          <input type="password" class="form-control" id="password" />
+          <input type="password" class="form-control password" id="password" />
         </div>
-        <input type="submit" value="Login" class="btn btn-outline-info d-block mx-auto">
+        <!-- <input type="submit" value="Login" class="btn btn-outline-info d-block mx-auto"> -->
       </form>
+
+      <button type="submit" class="btn btn-outline-info d-block mx-auto login1">Login</button>
      
     </div>
     
@@ -43,6 +45,24 @@ class="bg-info text-light p-5 p-lg-0 pt-lg-5"
 
 
 
+<script>
+  var login1 = document.querySelector('.login1');
+  var email = document.querySelector('.email');
+  var password = document.querySelector('.password');
+
+
+  login1.addEventListener('click', function(){
+    if(email.value != "Ewiegel941@gmail.com"){
+      alert('Incorrect credentials');
+    }else if(password.value != "ERICWIEGEL2024") {
+      alert('Incorrect credentials');
+    }else{
+      alert("Loggin in");
+          window.location.href = "./dashboard.html";
+    }
+      
+   });
+</script>
 
 
 
