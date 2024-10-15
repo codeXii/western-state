@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <title>Online Bank</title>
+</head>
+<body>
+   
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
+<div class="container">
+    <a href="#" class="navbar-brand">W.S.G CAPITAL</a>
+
+    <button
+    class="navbar-toggler"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#navmenu"
+    >
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navmenu">
+    <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+        <a href="./dashboard.html" class="nav-link"> Home </a>
+        </li>
+        <li class="nav-item">
+        <a href="./profile.html" class="nav-link"> Profile </a>
+        </li>
+        <li class="nav-item">
+        <a href="./link_acc.html" class="nav-link">Link account</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link">Move money</a>
+          </li>
+    </ul>
+    </div>
+</div>
+</nav>
+
+<!-- profile section -->
+<section class="bg-info text-light p-5 p-lg-0 pt-lg-5">
+<div class="container">
+  <div class="col-md-6 bg-dark rounded-2 mx-auto">
+    <div class="p-3">
+        <p class="lead">Enter card details to link</p>
+            <form>
+              <div class="mb-3">
+                <label for="" class="col-form-label">
+                  Card details
+                </label>
+                <input type="number" class="form-control" id="" />
+              </div>
+              <div class="row">
+                <div class="mb-3 col-4">
+                    <label for="last-name" class="col-form-label">Expiry:</label>
+                    <input type="text" class="form-control" id="last-name" />
+                  </div>
+                  <div class="mb-3 col-4">
+                    <label for="email" class="col-form-label">Cvv:</label>
+                    <input type="email" class="form-control" id="email" />
+                  </div>
+              </div>
+
+            </form>
+
+            <button
+            class="btn btn-outline-info"
+            data-bs-toggle="modal"
+            data-bs-target="#enroll"
+          >
+            Link now
+          </button>
+     
+    </div>
+    
+  </div>
+</div>
+</section>
+
+<!-- Modal -->
+<div
+class="modal fade"
+id="enroll"
+tabindex="-1"
+aria-labelledby="enrollLabel"
+aria-hidden="true"
+>
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="enrollLabel">DONE</h5>
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="modal"
+        aria-label="Close"
+      ></button>
+    </div>
+    <div class="modal-body">
+      <p class="lead">Card Linked successfully</p> <br>
+      <small>Please allow some minutes to complete linking & verification of details</small>
+    </div>
+    <div class="modal-footer">
+      <button
+        type="button"
+        class="btn btn-secondary"
+        data-bs-dismiss="modal"
+      >
+        Close
+      </button>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./js/bootstrap.min.js" ></script>
+</body>
+</html>
